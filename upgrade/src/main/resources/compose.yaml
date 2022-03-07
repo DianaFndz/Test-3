@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+   db:
+     image: mysql:8.0.28
+     volumes:
+       - C:\Users\a843690\Documents\docker\myssql:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_PASSWORD: Galaxia0107
+     ports:
+       - "3307:3306"
+     container_name: mysql
